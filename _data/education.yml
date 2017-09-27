@@ -1,0 +1,15 @@
+- university: University of California Irvine
+  years: 2000-2004
+  degree: Ph.D. in Information & Computer Sciences
+  location: Irvine, CA
+  description:
+    - Advised by **Paul Dourish**
+    - PhD thesis
+- university: University of California, Berkeley
+  years: 1997-2000
+  degree: M.Sc. in Computer Science & Engineering
+  location: Berkeley, CA
+- university: Washington University, St. Louis
+  years: 1993-1997
+  degree: B.Sc. in Computer Science; B.A. in Philosophy
+  location: St. Louis, MO

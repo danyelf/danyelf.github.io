@@ -1,0 +1,276 @@
+---
+permalink: /cv.html
+title: Danyel Fisher - CV
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta name="application-name" content="{{ site.title }}">
+    <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}"/>
+    <link rel="icon" type="image/jpeg" href="{{ '/favicon.png' | relative_url }}" sizes="250x250" />
+
+    <title>{{ page.title | escape }}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
+
+    <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
+    <style>
+      body {
+        font-family: "Georgia", serif;
+        font-size: 14px;
+      }
+
+      /* It's not good to hide links but looks better in a CV. */
+      a {
+        color: #333;
+      }
+
+      .container {
+        min-width: 480px;
+        max-width: 800px;
+      }
+
+      .container > * {
+        margin-left: 105px;
+      }
+
+      .year-container {
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+      }
+
+      .year-container h3 {
+        flex: 1;
+      }
+
+      .year-container .year {
+        display: block;
+        width: 85px;
+        text-align: right;
+        padding-right: 20px;
+        flex-shrink: 0;
+      }
+
+      .year-container .right {
+        padding-left: 10px;
+        color: #828282;
+        font-size: .9em;
+      }
+
+      h1, h2, h3, h4 {
+        font-weight: 500;
+        border: none;
+        color: #333;
+        font-family: Halvetica Neue, sans-serif;
+      }
+
+      h1, h2 {
+        margin: .9em 0 .1em 0;
+      }
+
+      h1 {
+        font-size: 2.6em;
+      }
+
+      h2 {
+        font-size: 2.2em;
+      }
+
+      .header-columns {
+        display: flex;
+        flex-direction: row;
+      }
+      .header-columns > div:first-child {
+        flex: 1;
+      }
+      .header-columns > div:last-child {
+        width: 190px;
+      }
+
+      h3 {
+        margin: 0;
+        font-size: 1.1em;
+        font-weight: bold;
+      }
+
+      h4 {
+        margin: 0;
+        font-size: 1em;
+        font-weight: bold;
+      }
+
+      .right-align {
+        text-align: right;
+      }
+
+      .publication {
+        margin-bottom: 1.2em;
+      }
+
+      .publication p {
+        margin-bottom: 0.1em;
+      }
+
+      .muted, .muted a {
+        color: #666;
+      }
+
+      .award {
+        color: #b00
+      }
+
+      ul {
+        list-style: none;
+        margin-left: 0;
+      }
+
+      /* Link back to homepage */
+
+      .back {
+        font-family: sans-serif;
+        min-width: 480px;  /* same as container */
+        padding: 0.6em 1em;
+        background-color: #666;
+        color: #fff;
+      }
+
+      .back a {
+        color: #fff;
+        font-weight: 600;
+      }
+
+      .back a:hover {
+        text-decoration: none;
+      }
+
+      @media print {
+        body {
+          font-size: 11px;
+        }
+
+        .no-print, .no-print * {
+          display: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="no-print back">
+      ◄ <a href="{{ absolute_url }}/">Back to Dominik's Homepage</a>
+    </div>
+
+    <div class="page-content">
+      <section class="container">
+<h1>Danyel Fisher</h1>
+
+<div class="header-columns">
+  <div>
+    <p>
+      Senior Researcher<br/>
+      Microsoft Research
+    </p>
+  </div>
+  <div>
+    <p class="right-align">
+      <a href="{{ absolute_url }}/">https://danyelfisher.info</a><br/>
+      <a href="mailto:danyelf@microsoft.com">danyelf@microsoft.com</a><br/>
+      <a href="https://twitter.com/fisherdanyel">@fisherdanyel</a>
+    </p>
+  </div>
+</div>
+
+
+<h2>Research Area</h2>
+
+<p>
+BLA BLA BLA
+</p>
+
+
+<h2>Education</h2>
+
+{% for ed in site.data.education %}
+  <div class="year-container">
+    <span class="year">{{ed.years}}</span>
+    <h3>{{ ed.degree }}, {{ ed.university }}</h3>
+    <span class="right">{{ ed.location }}</span>
+  </div>
+  <p>
+    {% for des in ed.description %}
+      <span>{{ des | markdownify | remove: '<p>' | remove: '</p>' }}</span>{% unless forloop.last %}<br/>{% endunless %}
+    {% endfor %}
+  </p>
+{% endfor %}
+
+
+<h2>Publications</h2>
+
+{% for pub in site.data.publications %}
+  {% if pub.venue %}
+    <div class="year-container">
+      <span class="year">{{pub.year}}</span>
+      <h3>{{ pub.title }}</h3>
+    </div>
+    <div class="publication">
+      <p>
+        {% for author in pub.authors %}
+          {% include person person=author %}{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      </p>
+      <p class="muted">{{pub.venue}}{% if pub.venue_location%}, {{pub.venue_location}}{% endif %}</p>
+      {% if pub.awards %}<strong class="award">{{pub.awards}}</strong>{% endif %}
+    </div>
+  {% endif %}
+{% endfor %}
+
+<h2>Research Experience</h2>
+
+  <div class="year-container">
+    <span class="year">2004-2017</span>
+    <h3>Microsoft Research -- Senior Researcher</h3>
+    <span class="right">Redmond, WA</span>
+  </div>
+  <p>
+    {{ exp.description }}
+  </p>
+
+<h2>Selected Recent Talks</h2>
+
+{% for talk in site.data.talks %}
+  <div class="year-container">
+    <span class="year">{{talk.year}}</span>
+    <h3>{{ talk.title }}</h3>
+  </div>
+  <p>{{ talk.location }}</p>
+{% endfor %}
+
+<h2>Issued Patents</h2>
+
+{% for pat in site.data.patents %}
+    <div class="year-container">
+      <span class="year">{{pat.year}}</span>
+      <h3>{{ pat.title }}</h3>
+    </div>
+    <div class="publication">
+      <p>
+        {% for inventor in pat.inventors %}
+          {% include person person=inventor %}{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      </p>
+    </div>
+{% endfor %}
+
+
+      </section>
+    </div>
+  </body>
+</html>

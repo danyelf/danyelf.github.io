@@ -1,0 +1,1068 @@
+[   {
+        "___comment": "extracted from http://dblp2.uni-trier.de/pers/hd/f/Fisher:Danyel and then converted to JSON with https://codebeautify.org/xmltojson and then hand-edited.",
+        "___todo": "articles may be associated with FULL TEXT and may be associated with an TAG (definitely!), IMAGE or a DESCRIPTION (perhaps). These should all be wired up correctly. Also, there are probably some articles DBLP doesn't know about (56 seems low). We can use tags to chase down articles later",        
+        "type": "article",
+        "author": [
+            "Alex Bigelow",
+            "Steven M. Drucker",
+            "Danyel Fisher",
+            "Miriah D. Meyer"
+        ],
+        "title": "Iterating between Tools to Create and Edit Visualizations.",
+        "pages": "481-490",
+        "year": "2017",
+        "volume": "23",
+        "journal": "IEEE Trans. Vis. Comput. Graph.",
+        "number": "1",
+        "ee": [
+            "https://doi.org/10.1109/TVCG.2016.2598609",
+            "http://doi.ieeecomputersociety.org/10.1109/TVCG.2016.2598609"
+        ],
+        "url": "db/journals/tvcg/tvcg23.html#BigelowDFM17",
+        "_key": "journals/tvcg/BigelowDFM17",
+        "_mdate": "2017-05-28"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Dominik Moritz",
+            "Danyel Fisher",
+            "Bolin Ding",
+            "Chi Wang 0001"
+        ],
+        "title": "Trust, but Verify: Optimistic Visualizations of Approximate Queries for Exploring Big Data.",
+        "pages": "2904-2915",
+        "year": "2017",
+        "booktitle": "CHI",
+        "ee": "http://doi.acm.org/10.1145/3025453.3025456",
+        "crossref": "conf/chi/2017",
+        "url": "db/conf/chi/chi2017.html#MoritzFD017",
+        "_key": "conf/chi/MoritzFD017",
+        "_mdate": "2017-05-03"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Dominik Moritz",
+            "Danyel Fisher"
+        ],
+        "title": "What Users Don't Expect about Exploratory Data Analysis on Approximate Query Processing Systems.",
+        "pages": "9:1-9:4",
+        "year": "2017",
+        "booktitle": "HILDA@SIGMOD",
+        "ee": "http://doi.acm.org/10.1145/3077257.3077258",
+        "crossref": "conf/sigmod/2017hilda",
+        "url": "db/conf/sigmod/hilda2017.html#MoritzF17",
+        "_key": "conf/sigmod/MoritzF17",
+        "_mdate": "2017-05-17"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Leilani Battle",
+            "Danyel Fisher",
+            "Robert DeLine",
+            "Mike Barnett",
+            "Badrish Chandramouli",
+            "Jonathan Goldstein"
+        ],
+        "title": "Making Sense of Temporal Queries with Interactive Visualization.",
+        "pages": "5433-5443",
+        "year": "2016",
+        "booktitle": "CHI",
+        "ee": "http://doi.acm.org/10.1145/2858036.2858408",
+        "crossref": "conf/chi/2016",
+        "url": "db/conf/chi/chi2016.html#BattleFDBCG16",
+        "_key": "conf/chi/BattleFDBCG16",
+        "_mdate": "2016-05-08"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Titus Barik",
+            "Robert DeLine",
+            "Steven M. Drucker",
+            "Danyel Fisher"
+        ],
+        "title": "The bones of the system: a case study of logging and telemetry at Microsoft.",
+        "pages": "92-101",
+        "year": "2016",
+        "booktitle": "ICSE (Companion Volume)",
+        "ee": [
+            "http://doi.acm.org/10.1145/2889160.2889231",
+            "http://ieeexplore.ieee.org/document/7883293/"
+        ],
+        "crossref": "conf/icse/2016c",
+        "url": "db/conf/icse/icse2016c.html#BarikDDF16",
+        "_key": "conf/icse/BarikDDF16",
+        "_mdate": "2017-04-30"
+    },
+    {
+        "type": "inproceedings",
+        "author": "Danyel Fisher",
+        "title": "Big data exploration requires collaboration between visualization and data infrastructures.",
+        "pages": "16",
+        "year": "2016",
+        "booktitle": "HILDA@SIGMOD",
+        "ee": "http://doi.acm.org/10.1145/2939502.2939518",
+        "crossref": "conf/sigmod/2016hilda",
+        "url": "db/conf/sigmod/hilda2016.html#Fisher16",
+        "_key": "conf/sigmod/Fisher16",
+        "_mdate": "2016-06-19"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Emanuel Zgraggen",
+            "Steven M. Drucker",
+            "Danyel Fisher",
+            "Robert DeLine"
+        ],
+        "title": "(s|qu)eries: Visual Regular Expressions for Querying and Exploring Event Sequences.",
+        "pages": "2683-2692",
+        "year": "2015",
+        "booktitle": "CHI",
+        "ee": "http://doi.acm.org/10.1145/2702123.2702262",
+        "crossref": "conf/chi/2015",
+        "url": "db/conf/chi/chi2015.html#ZgraggenDFD15",
+        "_key": "conf/chi/ZgraggenDFD15",
+        "_mdate": "2015-04-19"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Robert DeLine",
+            "Danyel Fisher"
+        ],
+        "title": "Supporting exploratory data analysis with live programming.",
+        "pages": "111-119",
+        "year": "2015",
+        "booktitle": "VL/HCC",
+        "ee": [
+            "https://doi.org/10.1109/VLHCC.2015.7357205",
+            "http://doi.ieeecomputersociety.org/10.1109/VLHCC.2015.7357205"
+        ],
+        "crossref": "conf/vl/2015",
+        "url": "db/conf/vl/vlhcc2015.html#DeLineF15",
+        "_key": "conf/vl/DeLineF15",
+        "_mdate": "2017-05-24"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Robert DeLine",
+            "Danyel Fisher",
+            "Badrish Chandramouli",
+            "Jonathan Goldstein",
+            "Michael Barnett 0001",
+            "James F. Terwilliger",
+            "John Wernsing"
+        ],
+        "title": "Tempe: Live scripting for live data.",
+        "pages": "137-141",
+        "year": "2015",
+        "booktitle": "VL/HCC",
+        "ee": [
+            "https://doi.org/10.1109/VLHCC.2015.7357208",
+            "http://doi.ieeecomputersociety.org/10.1109/VLHCC.2015.7357208"
+        ],
+        "crossref": "conf/vl/2015",
+        "url": "db/conf/vl/vlhcc2015.html#DeLineFCG0TW15",
+        "_key": "conf/vl/DeLineFCG0TW15",
+        "_mdate": "2017-05-24"
+    },
+    {
+        "type": "article",
+        "author": [
+            "Danyel Fisher",
+            "Steven M. Drucker",
+            "Mary Czerwinski"
+        ],
+        "title": "Business Intelligence Analytics [Guest editors' introduction].",
+        "pages": "22-24",
+        "year": "2014",
+        "volume": "34",
+        "journal": "IEEE Computer Graphics and Applications",
+        "number": "5",
+        "ee": [
+            "https://doi.org/10.1109/MCG.2014.86",
+            "http://doi.ieeecomputersociety.org/10.1109/MCG.2014.86"
+        ],
+        "url": "db/journals/cga/cga34.html#FisherDC14",
+        "_key": "journals/cga/FisherDC14",
+        "_mdate": "2017-05-20"
+    },
+    {
+        "type": "article",
+        "author": [
+            "Meredith Ringel Morris",
+            "Andreea Danielescu",
+            "Steven M. Drucker",
+            "Danyel Fisher",
+            "Bongshin Lee",
+            "m. c. schraefel",
+            "Jacob O. Wobbrock"
+        ],
+        "title": "Reducing legacy bias in gesture elicitation studies.",
+        "pages": "40-45",
+        "year": "2014",
+        "volume": "21",
+        "journal": "Interactions",
+        "number": "3",
+        "ee": "http://doi.acm.org/10.1145/2591689",
+        "url": "db/journals/interactions/interactions21.html#MorrisDDFLsW14",
+        "_key": "journals/interactions/MorrisDDFLsW14",
+        "_mdate": "2014-05-20"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Alex Bigelow",
+            "Steven M. Drucker",
+            "Danyel Fisher",
+            "Miriah D. Meyer"
+        ],
+        "title": "Reflections on how designers design with data.",
+        "pages": "17-24",
+        "year": "2014",
+        "booktitle": "AVI",
+        "ee": "http://doi.acm.org/10.1145/2598153.2598175",
+        "crossref": "conf/avi/2014",
+        "url": "db/conf/avi/avi2014.html#BigelowDFM14",
+        "_key": "conf/avi/BigelowDFM14",
+        "_mdate": "2016-01-19"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Nivan Ferreira",
+            "Danyel Fisher",
+            "Arnd Christian König"
+        ],
+        "title": "Sample-oriented task-driven visualizations: allowing users to make better, more confident decisions.",
+        "pages": "571-580",
+        "year": "2014",
+        "booktitle": "CHI",
+        "ee": "http://doi.acm.org/10.1145/2556288.2557131",
+        "crossref": "conf/chi/2014",
+        "url": "db/conf/chi/chi2014.html#FerreiraFK14",
+        "_key": "conf/chi/FerreiraFK14",
+        "_mdate": "2014-04-26"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Todd Kulesza",
+            "Saleema Amershi",
+            "Rich Caruana",
+            "Danyel Fisher",
+            "Denis Xavier Charles"
+        ],
+        "title": "Structured labeling for facilitating concept evolution in machine learning.",
+        "pages": "3075-3084",
+        "year": "2014",
+        "booktitle": "CHI",
+        "ee": "http://doi.acm.org/10.1145/2556288.2557238",
+        "crossref": "conf/chi/2014",
+        "url": "db/conf/chi/chi2014.html#KuleszaACFC14",
+        "_key": "conf/chi/KuleszaACFC14",
+        "_mdate": "2014-10-02"
+    },
+    {
+        "type": "article",
+        "author": [
+            "Robert Musson",
+            "Jacqueline Richards",
+            "Danyel Fisher",
+            "Christian Bird",
+            "Brian Bussone",
+            "Sandipan Ganguly"
+        ],
+        "title": "Leveraging the Crowd: How 48, 000 Users Helped Improve Lync Performance.",
+        "pages": "38-45",
+        "year": "2013",
+        "volume": "30",
+        "journal": "IEEE Software",
+        "number": "4",
+        "ee": [
+            "https://doi.org/10.1109/MS.2013.67",
+            "http://doi.ieeecomputersociety.org/10.1109/MS.2013.67"
+        ],
+        "url": "db/journals/software/software30.html#MussonRFBBG13",
+        "_key": "journals/software/MussonRFBBG13",
+        "_mdate": "2017-05-18"
+    },
+    {
+        "type": "article",
+        "author": [
+            "Jessica Hullman",
+            "Steven M. Drucker",
+            "Nathalie Henry Riche",
+            "Bongshin Lee",
+            "Danyel Fisher",
+            "Eytan Adar"
+        ],
+        "title": "A Deeper Understanding of Sequence in Narrative Visualization.",
+        "pages": "2406-2415",
+        "year": "2013",
+        "volume": "19",
+        "journal": "IEEE Trans. Vis. Comput. Graph.",
+        "number": "12",
+        "ee": [
+            "https://doi.org/10.1109/TVCG.2013.119",
+            "http://doi.ieeecomputersociety.org/10.1109/TVCG.2013.119"
+        ],
+        "url": "db/journals/tvcg/tvcg19.html#HullmanDRLFA13",
+        "_key": "journals/tvcg/HullmanDRLFA13",
+        "_mdate": "2017-05-28"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Steven M. Drucker",
+            "Danyel Fisher",
+            "Ramik Sadana",
+            "Jessica Herron",
+            "m. c. schraefel"
+        ],
+        "title": "TouchViz: a case study comparing two interfaces for data analytics on tablets.",
+        "pages": "2301-2310",
+        "year": "2013",
+        "booktitle": "CHI",
+        "ee": "http://doi.acm.org/10.1145/2470654.2481318",
+        "crossref": "conf/chi/2013",
+        "url": "db/conf/chi/chi2013.html#DruckerFSHs13",
+        "_key": "conf/chi/DruckerFSHs13",
+        "_mdate": "2013-05-03"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Mike Barnett",
+            "Badrish Chandramouli",
+            "Robert DeLine",
+            "Steven M. Drucker",
+            "Danyel Fisher",
+            "Jonathan Goldstein",
+            "Patrick Morrison",
+            "John C. Platt"
+        ],
+        "title": "Stat!: an interactive analytics environment for big data.",
+        "pages": "1013-1016",
+        "year": "2013",
+        "booktitle": "SIGMOD Conference",
+        "ee": "http://doi.acm.org/10.1145/2463676.2463683",
+        "crossref": "conf/sigmod/2013",
+        "url": "db/conf/sigmod/sigmod2013.html#BarnettCDDFGMP13",
+        "_key": "conf/sigmod/BarnettCDDFGMP13",
+        "_mdate": "2013-06-26"
+    },
+    {
+        "type": "article",
+        "author": [
+            "Danyel Fisher",
+            "Steven M. Drucker",
+            "Arnd Christian König"
+        ],
+        "title": "Exploratory Visualization Involving Incremental, Approximate Database Queries and Uncertainty.",
+        "pages": "55-62",
+        "year": "2012",
+        "volume": "32",
+        "journal": "IEEE Computer Graphics and Applications",
+        "number": "4",
+        "ee": [
+            "https://doi.org/10.1109/MCG.2012.48",
+            "http://doi.ieeecomputersociety.org/10.1109/MCG.2012.48"
+        ],
+        "url": "db/journals/cga/cga32.html#FisherDK12",
+        "_key": "journals/cga/FisherDK12",
+        "_mdate": "2017-05-20"
+    },
+    {
+        "type": "article",
+        "author": [
+            "Danyel Fisher",
+            "Robert DeLine",
+            "Mary Czerwinski",
+            "Steven M. Drucker"
+        ],
+        "title": "Interactions with big data analytics.",
+        "pages": "50-59",
+        "year": "2012",
+        "volume": "19",
+        "journal": "Interactions",
+        "number": "3",
+        "ee": "http://doi.acm.org/10.1145/2168931.2168943",
+        "url": "db/journals/interactions/interactions19.html#FisherDCD12",
+        "_key": "journals/interactions/FisherDCD12",
+        "_mdate": "2012-05-03"
+    },
+    {
+        "type": "article",
+        "author": [
+            "Petra Isenberg",
+            "Danyel Fisher",
+            "Sharoda A. Paul",
+            "Meredith Ringel Morris",
+            "Kori Inkpen",
+            "Mary Czerwinski"
+        ],
+        "title": "Co-Located Collaborative Visual Analytics around a Tabletop Display.",
+        "pages": "689-702",
+        "year": "2012",
+        "volume": "18",
+        "journal": "IEEE Trans. Vis. Comput. Graph.",
+        "number": "5",
+        "ee": [
+            "https://doi.org/10.1109/TVCG.2011.287",
+            "http://doi.ieeecomputersociety.org/10.1109/TVCG.2011.287"
+        ],
+        "url": "db/journals/tvcg/tvcg18.html#IsenbergFPMIC12",
+        "_key": "journals/tvcg/IsenbergFPMIC12",
+        "_mdate": "2017-05-28"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Jian Zhao",
+            "Steven M. Drucker",
+            "Danyel Fisher",
+            "Donald Brinkman"
+        ],
+        "title": "TimeSlice: interactive faceted browsing of timeline data.",
+        "pages": "433-436",
+        "year": "2012",
+        "booktitle": "AVI",
+        "ee": "http://doi.acm.org/10.1145/2254556.2254639",
+        "crossref": "conf/avi/2012",
+        "url": "db/conf/avi/avi2012.html#ZhaoDFB12",
+        "_key": "conf/avi/ZhaoDFB12",
+        "_mdate": "2012-06-09"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Danyel Fisher",
+            "Igor O. Popov",
+            "Steven M. Drucker",
+            "m. c. schraefel"
+        ],
+        "title": "Trust me, i'm partially right: incremental visualization lets analysts explore large datasets faster.",
+        "pages": "1673-1682",
+        "year": "2012",
+        "booktitle": "CHI",
+        "ee": "http://doi.acm.org/10.1145/2207676.2208294",
+        "crossref": "conf/chi/2012",
+        "url": "db/conf/chi/chi2012.html#FisherPDs12",
+        "_key": "conf/chi/FisherPDs12",
+        "_mdate": "2012-05-07"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Petra Isenberg",
+            "Danyel Fisher"
+        ],
+        "title": "Cambiera: collaborative tabletop visual analytics.",
+        "pages": "581-582",
+        "year": "2011",
+        "booktitle": "CSCW",
+        "ee": "http://doi.acm.org/10.1145/1958824.1958916",
+        "crossref": "conf/cscw/2011",
+        "url": "db/conf/cscw/cscw2011.html#IsenbergF11",
+        "_key": "conf/cscw/IsenbergF11",
+        "_mdate": "2011-03-23"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Steven M. Drucker",
+            "Danyel Fisher",
+            "Sumit Basu"
+        ],
+        "title": "Helping Users Sort Faster with Adaptive Machine Learning Recommendations.",
+        "pages": "187-203",
+        "year": "2011",
+        "booktitle": "INTERACT (3)",
+        "ee": "https://doi.org/10.1007/978-3-642-23765-2_13",
+        "crossref": "conf/interact/2011-3",
+        "url": "db/conf/interact/interact2011-3.html#DruckerFB11",
+        "_key": "conf/interact/DruckerFB11",
+        "_mdate": "2017-05-24"
+    },
+    {
+        "type": "inproceedings",
+        "author": "Danyel Fisher",
+        "title": "Incremental, approximate database queries and uncertainty for exploratory visualization.",
+        "pages": "73-80",
+        "year": "2011",
+        "booktitle": "LDAV",
+        "ee": "https://doi.org/10.1109/LDAV.2011.6092320",
+        "crossref": "conf/ldav/2011",
+        "url": "db/conf/ldav/ldav2011.html#Fisher11",
+        "_key": "conf/ldav/Fisher11",
+        "_mdate": "2017-05-21"
+    },
+    {
+        "type": "article",
+        "author": [
+            "Meredith Ringel Morris",
+            "Danyel Fisher",
+            "Daniel Wigdor"
+        ],
+        "title": "Search on surfaces: Exploring the potential of interactive tabletops for collaborative search tasks.",
+        "pages": "703-717",
+        "year": "2010",
+        "volume": "46",
+        "journal": "Inf. Process. Manage.",
+        "number": "6",
+        "ee": "https://doi.org/10.1016/j.ipm.2009.10.004",
+        "url": "db/journals/ipm/ipm46.html#MorrisFW10",
+        "_key": "journals/ipm/MorrisFW10",
+        "_mdate": "2017-05-18"
+    },
+    {
+        "type": "article",
+        "author": [
+            "Danyel Fisher",
+            "Steven M. Drucker",
+            "Roland Fernandez",
+            "Scott Ruble"
+        ],
+        "title": "WebCharts: Extending Applications with Web-Authored, Embeddable Visualizations.",
+        "pages": "1157-1163",
+        "year": "2010",
+        "volume": "16",
+        "journal": "IEEE Trans. Vis. Comput. Graph.",
+        "number": "6",
+        "ee": [
+            "https://doi.org/10.1109/TVCG.2010.222",
+            "http://doi.ieeecomputersociety.org/10.1109/TVCG.2010.222"
+        ],
+        "url": "db/journals/tvcg/tvcg16.html#FisherDFR10",
+        "_key": "journals/tvcg/FisherDFR10",
+        "_mdate": "2017-05-28"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Uta Hinrichs",
+            "Danyel Fisher",
+            "Nathalie Henry Riche"
+        ],
+        "title": "ResearchWave: an ambient visualization for providing awareness of research activities.",
+        "pages": "31-34",
+        "year": "2010",
+        "booktitle": "Conference on Designing Interactive Systems",
+        "ee": "http://doi.acm.org/10.1145/1858171.1858177",
+        "crossref": "conf/ACMdis/2010",
+        "url": "db/conf/ACMdis/ACMdis2010.html#HinrichsFR10",
+        "_key": "conf/ACMdis/HinrichsFR10",
+        "_mdate": "2010-11-23"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Sumit Basu",
+            "Danyel Fisher",
+            "Steven M. Drucker",
+            "Hao Lu"
+        ],
+        "title": "Assisting Users with Clustering Tasks by Combining Metric Learning and Classification.",
+        "year": "2010",
+        "booktitle": "AAAI",
+        "ee": "http://www.aaai.org/ocs/index.php/AAAI/AAAI10/paper/view/1918",
+        "crossref": "conf/aaai/2010",
+        "url": "db/conf/aaai/aaai2010.html#BasuFDL10",
+        "_key": "conf/aaai/BasuFDL10",
+        "_mdate": "2010-09-01"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Petra Isenberg",
+            "Danyel Fisher",
+            "Meredith Ringel Morris",
+            "Kori Inkpen",
+            "Mary Czerwinski"
+        ],
+        "title": "An exploratory study of co-located collaborative visual analytics around a tabletop display.",
+        "pages": "179-186",
+        "year": "2010",
+        "booktitle": "IEEE VAST",
+        "ee": "https://doi.org/10.1109/VAST.2010.5652880",
+        "crossref": "conf/ieeevast/2010",
+        "url": "db/conf/ieeevast/ieeevast2010.html#IsenbergFMIC10",
+        "_key": "conf/ieeevast/IsenbergFMIC10",
+        "_mdate": "2017-05-25"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Avneesh Sud",
+            "Danyel Fisher",
+            "Huai-Ping Lee"
+        ],
+        "title": "Fast Dynamic Voronoi Treemaps.",
+        "pages": "85-94",
+        "year": "2010",
+        "booktitle": "ISVD",
+        "ee": [
+            "https://doi.org/10.1109/ISVD.2010.16",
+            "http://doi.ieeecomputersociety.org/10.1109/ISVD.2010.16"
+        ],
+        "crossref": "conf/isvd/2010",
+        "url": "db/conf/isvd/isvd2010.html#SudFL10",
+        "_key": "conf/isvd/SudFL10",
+        "_mdate": "2017-05-21"
+    },
+    {
+        "type": "article",
+        "author": [
+            "Petra Isenberg",
+            "Danyel Fisher"
+        ],
+        "title": "Collaborative Brushing and Linking for Co-located Visual Analytics of Document Collections.",
+        "pages": "1031-1038",
+        "year": "2009",
+        "volume": "28",
+        "journal": "Comput. Graph. Forum",
+        "number": "3",
+        "ee": "https://doi.org/10.1111/j.1467-8659.2009.01444.x",
+        "url": "db/journals/cgf/cgf28.html#IsenbergF09",
+        "_key": "journals/cgf/IsenbergF09",
+        "_mdate": "2017-05-26"
+    },
+    {
+        "type": "article",
+        "author": [
+            "Tim Dwyer",
+            "Bongshin Lee",
+            "Danyel Fisher",
+            "Kori Inkpen Quinn",
+            "Petra Isenberg",
+            "George G. Robertson",
+            "Chris North"
+        ],
+        "title": "A Comparison of User-Generated and Automatic Graph Layouts.",
+        "pages": "961-968",
+        "year": "2009",
+        "volume": "15",
+        "journal": "IEEE Trans. Vis. Comput. Graph.",
+        "number": "6",
+        "ee": [
+            "https://doi.org/10.1109/TVCG.2009.109",
+            "http://doi.ieeecomputersociety.org/10.1109/TVCG.2009.109"
+        ],
+        "url": "db/journals/tvcg/tvcg15.html#DwyerLFQIRN09",
+        "_key": "journals/tvcg/DwyerLFQIRN09",
+        "_mdate": "2017-05-28"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Jaime Teevan",
+            "Edward Cutrell",
+            "Danyel Fisher",
+            "Steven M. Drucker",
+            "Gonzalo Ramos",
+            "Paul André",
+            "Chang Hu"
+        ],
+        "title": "Visual snippets: summarizing web pages for search and revisitation.",
+        "pages": "2023-2032",
+        "year": "2009",
+        "booktitle": "CHI",
+        "ee": "http://doi.acm.org/10.1145/1518701.1519008",
+        "crossref": "conf/chi/2009",
+        "url": "db/conf/chi/chi2009.html#TeevanCFDRAH09",
+        "_key": "conf/chi/TeevanCFDRAH09",
+        "_mdate": "2009-04-13"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Chris North",
+            "Tim Dwyer",
+            "Bongshin Lee",
+            "Danyel Fisher",
+            "Petra Isenberg",
+            "George G. Robertson",
+            "Kori Inkpen"
+        ],
+        "title": "Understanding Multi-touch Manipulation for Surface Computing.",
+        "pages": "236-249",
+        "year": "2009",
+        "booktitle": "INTERACT (2)",
+        "ee": "https://doi.org/10.1007/978-3-642-03658-3_31",
+        "crossref": "conf/interact/2009-2",
+        "url": "db/conf/interact/interact2009-2.html#NorthDLFIRI09",
+        "_key": "conf/interact/NorthDLFIRI09",
+        "_mdate": "2017-05-24"
+    },
+    {
+        "type": "article",
+        "author": [
+            "George G. Robertson",
+            "Roland Fernandez",
+            "Danyel Fisher",
+            "Bongshin Lee",
+            "John T. Stasko"
+        ],
+        "title": "Effectiveness of Animation in Trend Visualization.",
+        "pages": "1325-1332",
+        "year": "2008",
+        "volume": "14",
+        "journal": "IEEE Trans. Vis. Comput. Graph.",
+        "number": "6",
+        "ee": [
+            "https://doi.org/10.1109/TVCG.2008.125",
+            "http://doi.ieeecomputersociety.org/10.1109/TVCG.2008.125"
+        ],
+        "url": "db/journals/tvcg/tvcg14.html#RobertsonFFLS08",
+        "_key": "journals/tvcg/RobertsonFFLS08",
+        "_mdate": "2017-05-28"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Miguel Elías",
+            "Jeremy Elson",
+            "Danyel Fisher",
+            "Jon Howell"
+        ],
+        "title": "Do I live in a flood basin?: synthesizing ten thousand maps.",
+        "pages": "255-264",
+        "year": "2008",
+        "booktitle": "CHI",
+        "ee": "http://doi.acm.org/10.1145/1357054.1357100",
+        "crossref": "conf/chi/2008",
+        "url": "db/conf/chi/chi2008.html#EliasEFH08",
+        "_key": "conf/chi/EliasEFH08",
+        "_mdate": "2008-04-08"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Eric Baumer",
+            "Danyel Fisher"
+        ],
+        "title": "Smarter Blogroll: An Exploration of Social Topic Extraction for Manageable Blogrolls.",
+        "pages": "155",
+        "year": "2008",
+        "crossref": "conf/hicss/2008",
+        "booktitle": "HICSS",
+        "ee": [
+            "https://doi.org/10.1109/HICSS.2008.398",
+            "http://doi.ieeecomputersociety.org/10.1109/HICSS.2008.398"
+        ],
+        "url": "db/conf/hicss/hicss2008.html#BaumerF08",
+        "_key": "conf/hicss/BaumerF08",
+        "_mdate": "2017-05-23"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Danyel Fisher",
+            "Tammara Combs Turner",
+            "Marc A. Smith"
+        ],
+        "title": "Space Planning for Online Community.",
+        "year": "2008",
+        "booktitle": "ICWSM",
+        "ee": "http://www.aaai.org/Library/ICWSM/2008/icwsm08-014.php",
+        "crossref": "conf/icwsm/2008",
+        "url": "db/conf/icwsm/icwsm2008.html#FisherTS08",
+        "_key": "conf/icwsm/FisherTS08",
+        "_mdate": "2010-09-01"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Michael Gamon",
+            "Sumit Basu",
+            "Dmitriy Belenko",
+            "Danyel Fisher",
+            "Matthew Hurst",
+            "Arnd Christian König"
+        ],
+        "title": "BLEWS: Using Blogs to Provide Context for News Articles.",
+        "year": "2008",
+        "booktitle": "ICWSM",
+        "ee": "http://www.aaai.org/Library/ICWSM/2008/icwsm08-015.php",
+        "crossref": "conf/icwsm/2008",
+        "url": "db/conf/icwsm/icwsm2008.html#GamonBBFHK08",
+        "_key": "conf/icwsm/GamonBBFHK08",
+        "_mdate": "2010-09-01"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Danyel Fisher",
+            "Aaron Hoff",
+            "George G. Robertson",
+            "Matthew Hurst"
+        ],
+        "title": "Narratives: A visualization to track narrative events as they develop.",
+        "pages": "115-122",
+        "year": "2008",
+        "booktitle": "IEEE VAST",
+        "ee": "https://doi.org/10.1109/VAST.2008.4677364",
+        "crossref": "conf/ieeevast/2008",
+        "url": "db/conf/ieeevast/ieeevast2008.html#FisherHRH08",
+        "_key": "conf/ieeevast/FisherHRH08",
+        "_mdate": "2017-05-25"
+    },
+    {
+        "type": "article",
+        "author": [
+            "Howard T. Welser",
+            "Eric Gleave",
+            "Danyel Fisher",
+            "Marc A. Smith"
+        ],
+        "title": "Visualizing the Signatures of Social Roles in Online Discussion Groups.",
+        "year": "2007",
+        "volume": "8",
+        "journal": "Journal of Social Structure",
+        "ee": "http://www.cmu.edu/joss/content/articles/volume8/Welser",
+        "url": "db/journals/joss/joss8.html#WelserGFS07",
+        "_key": "journals/joss/WelserGFS07",
+        "_mdate": "2013-01-21"
+    },
+    {
+        "type": "article",
+        "author": "Danyel Fisher",
+        "title": "Hotmap: Looking at Geographic Attention.",
+        "pages": "1184-1191",
+        "year": "2007",
+        "volume": "13",
+        "journal": "IEEE Trans. Vis. Comput. Graph.",
+        "number": "6",
+        "ee": [
+            "https://doi.org/10.1109/TVCG.2007.70561",
+            "http://doi.ieeecomputersociety.org/10.1109/TVCG.2007.70561"
+        ],
+        "url": "db/journals/tvcg/tvcg13.html#Fisher07",
+        "_key": "journals/tvcg/Fisher07",
+        "_mdate": "2017-05-28"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Danyel Fisher",
+            "A. J. Bernheim Brush",
+            "Bernie Hogan",
+            "Marc A. Smith",
+            "Andy Jacobs"
+        ],
+        "title": "Using Social Metadata in Email Triage: Lessons from the Field.",
+        "pages": "13-22",
+        "year": "2007",
+        "crossref": "conf/hci/2007-9",
+        "booktitle": "HCI (9)",
+        "ee": "https://doi.org/10.1007/978-3-540-73354-6_2",
+        "url": "db/conf/hci/hci2007-9.html#FisherBHSJ07",
+        "_key": "conf/hci/FisherBHSJ07",
+        "_mdate": "2017-05-24"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Danyel Fisher",
+            "A. J. Bernheim Brush",
+            "Eric Gleave",
+            "Marc A. Smith"
+        ],
+        "title": "Revisiting Whittaker & Sidner's \"email overload\" ten years later.",
+        "pages": "309-312",
+        "year": "2006",
+        "crossref": "conf/cscw/2006",
+        "booktitle": "CSCW",
+        "ee": "http://doi.acm.org/10.1145/1180875.1180922",
+        "url": "db/conf/cscw/cscw2006.html#FisherBGS06",
+        "_key": "conf/cscw/FisherBGS06",
+        "_mdate": "2009-03-09"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "John W. Kelly",
+            "Danyel Fisher",
+            "Marc A. Smith"
+        ],
+        "title": "Friends, foes, and fringe: norms and structure in political discussion networks.",
+        "pages": "412-417",
+        "year": "2006",
+        "crossref": "conf/dgo/2006",
+        "booktitle": "DG.O",
+        "ee": "http://doi.acm.org/10.1145/1146598.1146727",
+        "url": "db/conf/dgo/dgo2006.html#KellyFS06",
+        "_key": "conf/dgo/KellyFS06",
+        "_mdate": "2008-02-19"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Danyel Fisher",
+            "Marc A. Smith",
+            "Howard T. Welser"
+        ],
+        "title": "You Are Who You Talk To: Detecting Roles in Usenet Newsgroups.",
+        "year": "2006",
+        "crossref": "conf/hicss/2006",
+        "booktitle": "HICSS",
+        "ee": [
+            "https://doi.org/10.1109/HICSS.2006.536",
+            "http://doi.ieeecomputersociety.org/10.1109/HICSS.2006.536"
+        ],
+        "url": "db/conf/hicss/hicss2006-3.html#FisherSW06",
+        "_key": "conf/hicss/FisherSW06",
+        "_mdate": "2017-05-23"
+    },
+    {
+        "type": "article",
+        "author": "Danyel Fisher",
+        "title": "Using Egocentric Networks to Understand Communication.",
+        "pages": "20-28",
+        "year": "2005",
+        "volume": "9",
+        "journal": "IEEE Internet Computing",
+        "number": "5",
+        "ee": [
+            "https://doi.org/10.1109/MIC.2005.114",
+            "http://doi.ieeecomputersociety.org/10.1109/MIC.2005.114"
+        ],
+        "url": "db/journals/internet/internet9.html#Fisher05",
+        "_key": "journals/internet/Fisher05",
+        "_mdate": "2017-05-20"
+    },
+    {
+        "type": "article",
+        "author": [
+            "Tammara Combs Turner",
+            "Marc A. Smith",
+            "Danyel Fisher",
+            "Howard T. Welser"
+        ],
+        "title": "Picturing Usenet: Mapping Computer-Mediated Collective Action.",
+        "year": "2005",
+        "volume": "10",
+        "journal": "J. Computer-Mediated Communication",
+        "number": "4",
+        "ee": "https://doi.org/10.1111/j.1083-6101.2005.tb00270.x",
+        "url": "db/journals/jcmc/jcmc10.html#TurnerSFW05",
+        "_key": "journals/jcmc/TurnerSFW05",
+        "_mdate": "2017-05-27"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Carman Neustaedter",
+            "A. J. Bernheim Brush",
+            "Marc A. Smith",
+            "Danyel Fisher"
+        ],
+        "title": "The Social Network and Relationship Finder: Social Sorting for Email Triage.",
+        "year": "2005",
+        "crossref": "conf/ceas/2005",
+        "booktitle": "CEAS",
+        "ee": "http://www.ceas.cc/papers-2005/149.pdf",
+        "url": "db/conf/ceas/ceas2005.html#NeustaedterBSF05",
+        "_key": "conf/ceas/NeustaedterBSF05",
+        "_mdate": "2006-06-01"
+    },
+    {
+        "type": "article",
+        "author": [
+            "Martin Wattenberg",
+            "Danyel Fisher"
+        ],
+        "title": "Analyzing perceptual organization in information graphics.",
+        "pages": "123-133",
+        "year": "2004",
+        "volume": "3",
+        "journal": "Information Visualization",
+        "number": "2",
+        "ee": "https://doi.org/10.1057/palgrave.ivs.9500070",
+        "url": "db/journals/ivs/ivs3.html#WattenbergF04",
+        "_key": "journals/ivs/WattenbergF04",
+        "_mdate": "2017-05-28"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Danyel Fisher",
+            "Paul Dourish"
+        ],
+        "title": "Social and temporal structures in everyday collaboration.",
+        "pages": "551-558",
+        "year": "2004",
+        "crossref": "conf/chi/2004",
+        "booktitle": "CHI",
+        "ee": "http://doi.acm.org/10.1145/985692.985762",
+        "url": "db/conf/chi/chi2004.html#FisherD04",
+        "_key": "conf/chi/FisherD04",
+        "_mdate": "2006-02-10"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Martin Wattenberg",
+            "Danyel Fisher"
+        ],
+        "title": "A Model of Multi-Scale Perceptual Organization in Information Graphics.",
+        "year": "2003",
+        "crossref": "conf/infovis/2003",
+        "booktitle": "INFOVIS",
+        "ee": [
+            "https://doi.org/10.1109/INFVIS.2003.1249005",
+            "http://doi.ieeecomputersociety.org/10.1109/INFVIS.2003.1249005"
+        ],
+        "url": "db/conf/infovis/infovis2003.html#WattenbergF03",
+        "pages": "23-30",
+        "_key": "conf/infovis/WattenbergF03",
+        "_mdate": "2017-05-24"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Ka-Ping Yee",
+            "Danyel Fisher",
+            "Rachna Dhamija",
+            "Marti A. Hearst"
+        ],
+        "title": "Animated Exploration of Dynamic Graphs with Radial Layout.",
+        "pages": "43-50",
+        "year": "2001",
+        "crossref": "conf/infovis/2001",
+        "booktitle": "INFOVIS",
+        "ee": [
+            "https://doi.org/10.1109/INFVIS.2001.963279",
+            "http://doi.ieeecomputersociety.org/10.1109/INFVIS.2001.963279"
+        ],
+        "url": "db/conf/infovis/infovis2001.html#YeeFDH01",
+        "_key": "conf/infovis/YeeFDH01",
+        "_mdate": "2017-05-24"
+    },
+    {
+        "type": "inproceedings",
+        "author": [
+            "Danyel Fisher",
+            "Kris Hildrum",
+            "Jason I. Hong",
+            "Mark W. Newman",
+            "Megan Thomas",
+            "Rich Vuduc"
+        ],
+        "title": "SWAMI: a framework for collaborative filtering algorithm development and evaluation.",
+        "pages": "366-368",
+        "year": "2000",
+        "crossref": "conf/sigir/2000",
+        "booktitle": "SIGIR",
+        "ee": "http://doi.acm.org/10.1145/345508.345658",
+        "url": "db/conf/sigir/sigir2000.html#FisherHHNTV00",
+        "_key": "conf/sigir/FisherHHNTV00",
+        "_mdate": "2017-02-08"
+    }
+]

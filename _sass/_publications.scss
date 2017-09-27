@@ -1,0 +1,54 @@
+.publication {
+  h3 {
+    font-size: 1.3em;
+    margin-bottom: 0em;
+    font-weight: $bold-font-weight;
+  }
+
+  .award-icon {
+    color: #ffc000;
+  }
+
+  .authors {
+    margin-bottom: 0.3em;
+    a {
+      color: $text-color;
+    }
+  }
+
+  .venue, .venue a {
+    color: $grey-color;
+  }
+
+  .awards {
+    margin-top: 0.1em;
+    font-weight: $bold-font-weight;
+  }
+
+  .tweet {
+    &:hover {
+      text-decoration: none;
+
+      .message {
+        text-decoration: underline;
+      }
+    }
+    .message {
+      font-size: 0.9em;
+      font-style: italic;
+      color: $grey-color;
+    }
+  }
+
+  .extra-links {
+    margin-top: 1em;
+
+    a {
+      margin-right: 1em;
+      &:hover {
+        text-decoration: none;
+        border-bottom: 1px solid $link-color;
+      }
+    }
+  }
+}

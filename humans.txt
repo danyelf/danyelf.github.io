@@ -1,0 +1,18 @@
+/* TEAM */
+	Author: Danyel Fisher
+	Twitter: @fisherdanyel
+
+/* THANKS */
+	Theme inspiration: Max Ogden
+	Twitter: @maxogden
+	From: Oakland, CA, USA
+
+	Author/Theme: Dominik Moritz
+	Twitter: @domoritz
+	From: Berlin, Germany
+
+/* SITE */
+	Language: English / German
+	Doctype: HTML5
+	IDE: Sublime Text, VIM, VSCode
+	Software: Jekyll
