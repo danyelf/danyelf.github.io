@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Agent Data Visualization Suite</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    header {
+      text-align: center;
+      color: white;
+      margin-bottom: 3rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      font-weight: 300;
+    }
+
+    .viewers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .viewer-card {
+      background: white;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
+    .viewer-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .viewer-card h2 {
+      color: #667eea;
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .viewer-card .icon {
+      font-size: 1.8rem;
+    }
+
+    .viewer-card .description {
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      font-size: 0.95rem;
+    }
+
+    .viewer-card .features {
+      list-style: none;
+      margin-bottom: 1rem;
+    }
+
+    .viewer-card .features li {
+      color: #888;
+      font-size: 0.85rem;
+      padding: 0.25rem 0;
+      padding-left: 1.25rem;
+      position: relative;
+    }
+
+    .viewer-card .features li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #667eea;
+      font-weight: bold;
+    }
+
+    .viewer-card .tech-stack {
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid #eee;
+      font-size: 0.8rem;
+      color: #999;
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: #667eea;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s ease;
+      margin-top: 0.5rem;
+    }
+
+    .cta:hover {
+      background: #5568d3;
+    }
+
+    footer {
+      text-align: center;
+      color: white;
+      opacity: 0.8;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Multi-Agent Data Visualization Suite</h1>
+      <p class="subtitle">Explore AI agent datasets through interactive visualizations</p>
+    </header>
+
+    <div class="viewers-grid">
+      <a href="treemap/" class="viewer-card">
+        <h2><span class="icon">📊</span> Faceted Browser</h2>
+        <p class="description">
+          Interactive treemap visualization for exploring multi-dimensional data with automatic facet detection and cumulative filtering.
+        </p>
+        <ul class="features">
+          <li>Auto-detects low-cardinality dimensions</li>
+          <li>Squarified treemap layouts</li>
+          <li>Cumulative filtering with AND logic</li>
+          <li>Real-time filter chips and detail panel</li>
+          <li>Warning status tracking</li>
+        </ul>
+        <div class="tech-stack">Svelte 5 + Vite + D3.js</div>
+        <span class="cta">Explore Data →</span>
+      </a>
+
+      <a href="matrix/" class="viewer-card">
+        <h2><span class="icon">🔲</span> Permissions Matrix</h2>
+        <p class="description">
+          Hierarchical heatmap showing permission co-occurrence patterns with interactive zoom and category grouping.
+        </p>
+        <ul class="features">
+          <li>25×25 hierarchical matrix</li>
+          <li>Interactive zoom by category</li>
+          <li>Color-coded cell intensities</li>
+          <li>Warning indicators overlay</li>
+          <li>Category-level navigation</li>
+        </ul>
+        <div class="tech-stack">D3.js v7 + Vanilla JavaScript</div>
+        <span class="cta">View Matrix →</span>
+      </a>
+
+      <a href="particles/" class="viewer-card">
+        <h2><span class="icon">✨</span> Particle Viewer</h2>
+        <p class="description">
+          WebGL-powered physics simulation showing agents as animated particles with multiple clustering modes and real-time interactions.
+        </p>
+        <ul class="features">
+          <li>Brownian motion and disc clustering</li>
+          <li>Permission-based pentagon layout</li>
+          <li>Hover effects with connection lines</li>
+          <li>Variable particle sizing by activity</li>
+          <li>Handles 10K+ particles smoothly</li>
+        </ul>
+        <div class="tech-stack">TypeScript + WebGL + Canvas API</div>
+        <span class="cta">Launch Particles →</span>
+      </a>
+    </div>
+
+    <footer>
+      <p>Built with a "move fast, learn, throw away" philosophy</p>
+      <p><a href="https://github.com/anthropics/claude-code" target="_blank">Powered by Claude Code</a></p>
+    </footer>
+  </div>
+</body>
+</html>

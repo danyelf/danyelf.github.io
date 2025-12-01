@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Particle Viewer - Agent Visualization</title>
+  <script type="module" crossorigin src="/multiagent/assets/particles-Cw77wdZd.js"></script>
+  <link rel="modulepreload" crossorigin href="/multiagent/assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="stylesheet" crossorigin href="/multiagent/assets/particles-B52Cvpng.css">
+</head>
+<body>
+  <canvas id="particle-canvas"></canvas>
+  <canvas id="overlay-canvas"></canvas>
+
+  <div id="detail-panel" class="detail-panel" style="display: none;">
+    <!-- Populated dynamically by JavaScript -->
+  </div>
+
+  <div id="instructions" class="instructions">
+    <p><strong>Particle Viewer</strong></p>
+    <p>Click a particle to freeze and view details</p>
+  </div>
+
+  <div id="stats" class="stats">
+    <span id="fps-counter">FPS: --</span>
+    <span class="stats-separator">|</span>
+    <span id="particle-counter">Particles: --</span>
+  </div>
+
+  <div id="controls" class="controls">
+    <div class="control-group">
+      <label class="control-label">Movement:</label>
+      <button id="toggle-movement" class="control-button">Switch to Grouped</button>
+    </div>
+
+    <div class="control-group" id="clustering-controls" style="display: none;">
+      <label class="control-label">Cluster by:</label>
+      <div class="button-group">
+        <button class="cluster-button active" data-attribute="role">Role</button>
+        <button class="cluster-button" data-attribute="cohort">Cohort</button>
+        <button class="cluster-button" data-attribute="platform">Platform</button>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <button id="toggle-filters" class="control-button-secondary">
+        <span id="filter-toggle-icon">▼</span> Filters
+      </button>
+    </div>
+
+    <div id="filters" class="filters collapsed">
+      <div class="filter-section">
+        <h3 class="filter-title">Platform</h3>
+        <div id="platform-filters" class="filter-list"></div>
+      </div>
+      <div class="filter-section">
+        <h3 class="filter-title">Role</h3>
+        <div id="role-filters" class="filter-list"></div>
+      </div>
+      <div class="filter-section">
+        <h3 class="filter-title">Cohort</h3>
+        <div id="cohort-filters" class="filter-list"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

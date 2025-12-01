@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Permission Co-occurrence Matrix</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script type="module" crossorigin src="/multiagent/assets/matrix-B7WbEb-f.js"></script>
+  <link rel="modulepreload" crossorigin href="/multiagent/assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="stylesheet" crossorigin href="/multiagent/assets/matrix-BLC1Cirw.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Permission Co-occurrence Matrix</h1>
+      <p id="subtitle" class="subtitle">Loading data...</p>
+      <div id="zoom-controls" style="display: none; margin-top: 10px;">
+        <button id="reset-zoom" onclick="resetZoom()" style="padding: 8px 16px; cursor: pointer; background: #0066cc; color: white; border: none; border-radius: 4px; font-size: 14px;">
+          ← Reset Zoom
+        </button>
+      </div>
+    </header>
+
+    <div id="visualization">
+      <svg id="matrix-svg"></svg>
+    </div>
+
+    <div id="tooltip" class="tooltip"></div>
+  </div>
+
+</body>
+</html>
