@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Particle Viewer - Agent Visualization</title>
-  <script type="module" crossorigin src="/multiagent/assets/particles-DmXZXTpj.js"></script>
+  <script type="module" crossorigin src="/multiagent/assets/particles-Dtlp2CCB.js"></script>
   <link rel="modulepreload" crossorigin href="/multiagent/assets/modulepreload-polyfill-B5Qt9EMX.js">
-  <link rel="stylesheet" crossorigin href="/multiagent/assets/particles-B52Cvpng.css">
+  <link rel="stylesheet" crossorigin href="/multiagent/assets/particles-mdwzv5CK.css">
 </head>
 <body>
   <canvas id="particle-canvas"></canvas>
@@ -40,6 +40,25 @@
         <button class="cluster-button" data-attribute="cohort">Cohort</button>
         <button class="cluster-button" data-attribute="platform">Platform</button>
       </div>
+    </div>
+
+    <div class="control-group" id="crossproduct-controls" style="display: none;">
+      <label class="control-label">X-Axis:</label>
+      <select id="x-category-select" class="category-select">
+        <option value="integrations" selected>Integrations</option>
+        <option value="administration">Administration</option>
+        <option value="access_sensitive_data">Access Sensitive Data</option>
+        <option value="communication">Communication</option>
+        <option value="data_operations">Data Operations</option>
+      </select>
+      <label class="control-label" style="margin-left: 15px;">Y-Axis:</label>
+      <select id="y-category-select" class="category-select">
+        <option value="administration" selected>Administration</option>
+        <option value="integrations">Integrations</option>
+        <option value="access_sensitive_data">Access Sensitive Data</option>
+        <option value="communication">Communication</option>
+        <option value="data_operations">Data Operations</option>
+      </select>
     </div>
 
     <div class="control-group">
