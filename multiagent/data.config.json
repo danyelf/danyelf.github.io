@@ -23,5 +23,6 @@
     "permission_categories",
     "connections"
   ],
-  "excludeFromDisplay": ["permissions", "cohort"]
+  "excludeFromDisplay": ["permissions", "cohort"],
+  "metrics": ["spend_30d", "users_1d", "users_7d", "users_30d"]
 }
