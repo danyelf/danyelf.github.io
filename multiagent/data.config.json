@@ -27,6 +27,7 @@
     "connections"
   ],
   "excludeFromDisplay": [
+    "user_ids",
     "permission_categories"
   ]
 }
