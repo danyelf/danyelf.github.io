@@ -1,1 +1,0 @@
-function a(){return{count:0,problematic:0,spend_30d:0,users_1d:0,users_7d:0,users_30d:0}}let e=null;function n(r="../data.json"){return e||(e=fetch(r).then(t=>{if(!t.ok)throw new Error(`Failed to load ${r}: ${t.status}`);return t.json()})),e}export{a as c,n as r};

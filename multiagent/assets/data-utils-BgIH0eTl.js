@@ -1,0 +1,1 @@
+function a(){return{count:0,problematic:0,spend_30d:0,users_1d:0,users_7d:0,users_30d:0}}function n(t){return t.toLocaleString()}let r=null;function o(t="../data.json"){return r||(r=fetch(t).then(e=>{if(!e.ok)throw new Error(`Failed to load ${t}: ${e.status}`);return e.json()})),r}export{a as c,n as f,o as r};
