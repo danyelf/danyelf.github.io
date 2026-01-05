@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Torah Map</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #1a1a1a; overflow: hidden; }
+    canvas { display: block; }
+    #controls {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.85);
+      padding: 12px;
+      border-radius: 8px;
+      font-family: system-ui, sans-serif;
+      color: #fff;
+      width: 280px;
+      z-index: 10;
+    }
+    #controls label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 12px;
+      color: #aaa;
+    }
+    #controls select {
+      width: 100%;
+      padding: 6px 8px;
+      border-radius: 4px;
+      border: 1px solid #444;
+      background: #222;
+      color: #fff;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    #controls select:focus {
+      outline: none;
+      border-color: #666;
+    }
+    /* Overlay legend container */
+    #overlay-legend {
+      margin-top: 12px;
+      font-size: 11px;
+    }
+    /* Commentary overlay legend */
+    #overlay-legend .legend-gradient {
+      height: 12px;
+      border-radius: 2px;
+      background: linear-gradient(to right, #1a1a2e, #16213e, #0f3460, #e94560);
+      margin-bottom: 2px;
+    }
+    #overlay-legend .legend-ticks {
+      position: relative;
+      height: 16px;
+    }
+    #overlay-legend .tick {
+      position: absolute;
+      transform: translateX(-50%);
+      color: #888;
+      font-size: 10px;
+    }
+    #overlay-legend .tick::before {
+      content: '';
+      position: absolute;
+      top: -4px;
+      left: 50%;
+      width: 1px;
+      height: 4px;
+      background: #666;
+    }
+    /* Divine names overlay legend */
+    .legend-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 4px;
+      font-size: 11px;
+      color: #ccc;
+    }
+    .swatch {
+      width: 16px;
+      height: 16px;
+      border-radius: 2px;
+    }
+    #verse-sidebar {
+      position: fixed;
+      right: 10px;
+      width: 280px;
+      background: rgba(0, 0, 0, 0.85);
+      border-radius: 8px;
+      font-family: system-ui, sans-serif;
+      color: #fff;
+      display: none;
+      overflow: hidden;
+      z-index: 10;
+    }
+    #verse-sidebar.visible {
+      display: block;
+    }
+    #verse-sidebar .verse-ref {
+      padding: 12px 14px;
+      padding-right: 36px;
+      background: rgba(255, 255, 255, 0.05);
+      font-size: 14px;
+      font-weight: 600;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      position: relative;
+    }
+    #verse-sidebar .close-btn {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      border: none;
+      background: transparent;
+      color: #666;
+      font-size: 18px;
+      cursor: pointer;
+      display: none;
+      line-height: 1;
+    }
+    #verse-sidebar .close-btn:hover {
+      color: #fff;
+    }
+    #verse-sidebar.pinned .close-btn {
+      display: block;
+    }
+    #verse-sidebar.pinned {
+      border: 1px solid rgba(106, 176, 243, 0.3);
+    }
+    #verse-sidebar .verse-hebrew {
+      padding: 14px;
+      font-family: "SBL Hebrew", "Ezra SIL", "Times New Roman", serif;
+      font-size: 18px;
+      line-height: 1.6;
+      direction: rtl;
+      text-align: right;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    #verse-sidebar .verse-english {
+      padding: 14px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #ccc;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    #verse-sidebar .sefaria-link {
+      padding: 12px 14px;
+      display: block;
+      color: #6ab0f3;
+      text-decoration: none;
+      font-size: 13px;
+    }
+    #verse-sidebar .sefaria-link:hover {
+      background: rgba(255, 255, 255, 0.05);
+    }
+    #verse-sidebar .sefaria-link .link-subtitle {
+      display: block;
+      font-size: 11px;
+      color: #888;
+      margin-top: 2px;
+    }
+/* Trop chart styles */
+    .trop-controls {
+      margin-top: 10px;
+    }
+    .trop-chart {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 4px;
+      margin-top: 6px;
+    }
+    .trop-chart button {
+      width: 100%;
+      aspect-ratio: 1;
+      border: 1px solid #444;
+      border-radius: 4px;
+      background: #222;
+      color: #fff;
+      font-family: "SBL Hebrew", "Ezra SIL", serif;
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 0.15s;
+      position: relative;
+    }
+    .trop-chart button:hover {
+      border-color: #888;
+      background: #333;
+    }
+    .trop-chart button.selected {
+      border-color: #6ab0f3;
+      background: #2a3f55;
+    }
+    .trop-chart button.rare::after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      width: 6px;
+      height: 6px;
+      background: #ffd700;
+      border-radius: 50%;
+    }
+    .trop-info {
+      margin-top: 8px;
+      font-size: 11px;
+      color: #888;
+      height: 36px;
+      line-height: 1.4;
+      overflow: hidden;
+    }
+    .trop-highlight {
+      background: rgba(255, 215, 0, 0.3);
+      border-radius: 2px;
+      padding: 0 1px;
+    }
+    /* Search styles */
+    #search-container {
+      position: relative;
+      margin-bottom: 12px;
+    }
+    #search-input {
+      width: 100%;
+      padding: 8px 28px 8px 10px;
+      border-radius: 4px;
+      border: 1px solid #444;
+      background: #222;
+      color: #fff;
+      font-size: 14px;
+    }
+    #search-input::placeholder {
+      color: #666;
+    }
+    #search-input:focus {
+      outline: none;
+      border-color: #6ab0f3;
+    }
+    #search-clear {
+      position: absolute;
+      right: 6px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: #666;
+      font-size: 16px;
+      cursor: pointer;
+      display: none;
+      padding: 2px 6px;
+    }
+    #search-clear:hover {
+      color: #fff;
+    }
+    #search-results {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: rgba(30, 30, 30, 0.98);
+      border: 1px solid #444;
+      border-top: none;
+      border-radius: 0 0 4px 4px;
+      max-height: 320px;
+      overflow-y: auto;
+      display: none;
+      z-index: 100;
+    }
+    #search-results.visible {
+      display: block;
+    }
+    .search-result {
+      padding: 8px 10px;
+      cursor: pointer;
+      border-bottom: 1px solid #333;
+    }
+    .search-result:last-child {
+      border-bottom: none;
+    }
+    .search-result:hover {
+      background: rgba(106, 176, 243, 0.15);
+    }
+    .search-result .ref {
+      font-size: 12px;
+      color: #6ab0f3;
+      margin-bottom: 2px;
+    }
+    .search-result .snippet {
+      font-size: 13px;
+      color: #aaa;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .search-result .snippet.rtl {
+      direction: rtl;
+      text-align: right;
+    }
+    .search-result .snippet mark {
+      background: rgba(255, 220, 100, 0.3);
+      color: #fff;
+    }
+    #search-count {
+      padding: 6px 10px;
+      font-size: 11px;
+      color: #666;
+      border-bottom: 1px solid #333;
+    }
+  </style>
+  <script type="module" crossorigin src="/torahmap/assets/index-D_64W63q.js"></script>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <div id="controls">
+    <label>Overlay</label>
+    <select id="overlay-select">
+      <option value="none">None</option>
+      <option value="search">Text Search</option>
+      <option value="divine-names">Divine Names</option>
+      <option value="commentary">Commentary</option>
+      <option value="trop">Trop</option>
+    </select>
+    <div id="overlay-controls"></div>
+    <div id="overlay-legend"></div>
+  </div>
+  <div id="verse-sidebar">
+    <div class="verse-ref"><span class="ref-text"></span><button class="close-btn">&times;</button></div>
+    <div class="verse-hebrew"></div>
+    <div class="verse-english"></div>
+    <a class="sefaria-link" href="#" target="_blank">
+      View on Sefaria
+      <span class="link-subtitle"></span>
+    </a>
+  </div>
+</body>
+</html>
