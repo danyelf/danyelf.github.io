@@ -132,6 +132,19 @@
     #verse-sidebar.pinned {
       border: 1px solid rgba(106, 176, 243, 0.3);
     }
+    #verse-sidebar .overlay-info {
+      padding: 10px 14px;
+      font-size: 12px;
+      line-height: 1.4;
+      color: #6ab0f3;
+      background: rgba(106, 176, 243, 0.1);
+      border-bottom: 1px solid rgba(106, 176, 243, 0.2);
+      font-style: italic;
+      display: none;
+    }
+    #verse-sidebar .overlay-info:not(:empty) {
+      display: block;
+    }
     #verse-sidebar .verse-hebrew {
       padding: 14px;
       font-family: "SBL Hebrew", "Ezra SIL", "Times New Roman", serif;
@@ -350,8 +363,161 @@
       color: #666;
       border-bottom: 1px solid #333;
     }
+    /* Help button */
+    #help-btn {
+      position: absolute;
+      top: -8px;
+      left: -8px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 1px solid #444;
+      background: #222;
+      color: #888;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    #help-btn:hover {
+      border-color: #6ab0f3;
+      color: #6ab0f3;
+      background: #2a3f55;
+    }
+    /* Help modal */
+    .help-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1000;
+    }
+    .help-modal.visible {
+      display: block;
+    }
+    .help-backdrop {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+    }
+    .help-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px;
+      max-width: 90vw;
+      max-height: 80vh;
+      background: #1e1e1e;
+      border-radius: 12px;
+      border: 1px solid #333;
+      overflow: hidden;
+      font-family: system-ui, sans-serif;
+      color: #e0e0e0;
+    }
+    .help-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 8px;
+      background: #252525;
+      border-bottom: 1px solid #333;
+    }
+    .help-tabs {
+      display: flex;
+      gap: 4px;
+    }
+    .help-tab {
+      padding: 12px 16px;
+      border: none;
+      background: transparent;
+      color: #888;
+      font-size: 14px;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: all 0.15s;
+    }
+    .help-tab:hover {
+      color: #ccc;
+    }
+    .help-tab.active {
+      color: #6ab0f3;
+      border-bottom-color: #6ab0f3;
+    }
+    .help-close {
+      width: 32px;
+      height: 32px;
+      border: none;
+      background: transparent;
+      color: #666;
+      font-size: 24px;
+      cursor: pointer;
+      line-height: 1;
+    }
+    .help-close:hover {
+      color: #fff;
+    }
+    .help-body {
+      padding: 24px;
+      overflow-y: auto;
+      max-height: calc(80vh - 50px);
+      line-height: 1.6;
+    }
+    .help-body h2 {
+      margin: 0 0 12px;
+      font-size: 20px;
+      color: #fff;
+    }
+    .help-body p {
+      margin: 0 0 12px;
+      color: #bbb;
+    }
+    .help-body ul {
+      margin: 0 0 12px;
+      padding-left: 20px;
+      color: #bbb;
+    }
+    .help-body li {
+      margin-bottom: 6px;
+    }
+    .controls-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .controls-table td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #333;
+    }
+    .controls-table td:first-child {
+      color: #6ab0f3;
+      font-weight: 500;
+      width: 120px;
+    }
+    .controls-table tr:last-child td {
+      border-bottom: none;
+    }
+    .overlay-list {
+      margin: 0;
+    }
+    .overlay-list dt {
+      color: #6ab0f3;
+      font-weight: 600;
+      margin-top: 16px;
+    }
+    .overlay-list dt:first-child {
+      margin-top: 0;
+    }
+    .overlay-list dd {
+      margin: 4px 0 0 0;
+      color: #aaa;
+    }
   </style>
-  <script type="module" crossorigin src="/torahmap/assets/index-D6Rimrkr.js"></script>
+  <script type="module" crossorigin src="/torahmap/assets/index-Dt63KEI0.js"></script>
 </head>
 <body>
   <canvas id="canvas"></canvas>
@@ -363,12 +529,14 @@
       <option value="divine-names">Divine Names</option>
       <option value="commentary">Commentary</option>
       <option value="trop">Trop</option>
+      <option value="haftarah">Haftarah</option>
     </select>
     <div id="overlay-controls"></div>
     <div id="overlay-legend"></div>
   </div>
   <div id="verse-sidebar">
     <div class="verse-ref"><span class="ref-text"></span><button class="close-btn">&times;</button></div>
+    <div class="overlay-info"></div>
     <div class="verse-hebrew"></div>
     <div class="verse-english"></div>
     <a class="sefaria-link" href="#" target="_blank">
