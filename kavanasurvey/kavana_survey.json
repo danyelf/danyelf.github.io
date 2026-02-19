@@ -18995,10 +18995,10 @@
       "label": "How connected do you feel to other Kavana community members?",
       "type": "likert",
       "scaleOrder": [
-        "Somewhat connected (I generally know 3 - 10 people at most Kavana events).",
-        "Extremely connected (I generally know 10+ people at most Kavana events, and/or regularly see Kavana people outside of Kavana events)",
+        "Not connected (I generally don't know anyone at most Kavana events).",
         "A little connected (I generally know 1 - 2 people at most Kavana events).",
-        "Not connected (I generally don't know anyone at most Kavana events)."
+        "Somewhat connected (I generally know 3 - 10 people at most Kavana events).",
+        "Extremely connected (I generally know 10+ people at most Kavana events, and/or regularly see Kavana people outside of Kavana events)"
       ],
       "groupable": true
     },
@@ -19006,10 +19006,10 @@
       "label": "To what extent do you feel Kavana currently fosters meaningful inter-generational connection?",
       "type": "likert",
       "scaleOrder": [
-        3,
+        1,
         2,
-        4,
-        1
+        3,
+        4
       ],
       "groupable": true
     },
@@ -19017,10 +19017,10 @@
       "label": "How important is it to you that different generations in Kavana connect?",
       "type": "likert",
       "scaleOrder": [
-        3,
-        4,
+        1,
         2,
-        1
+        3,
+        4
       ],
       "groupable": true
     },
@@ -19028,10 +19028,10 @@
       "label": "How important is co-creation to your Kavana experience? ",
       "type": "likert",
       "scaleOrder": [
-        3,
-        4,
+        1,
         2,
-        1
+        3,
+        4
       ],
       "groupable": true
     },
@@ -19039,10 +19039,10 @@
       "label": "To what extent do you feel like you have realistic and meaningful opportunities to volunteer and co-create with Kavana?\u201d",
       "type": "likert",
       "scaleOrder": [
-        4,
-        3,
+        1,
         2,
-        1
+        3,
+        4
       ],
       "groupable": true
     },
@@ -19170,10 +19170,10 @@
       "label": "How important is it to you that Kavana is/remains a (politically) pluralistic community?",
       "type": "likert",
       "scaleOrder": [
-        4,
-        3,
+        1,
         2,
-        1
+        3,
+        4
       ],
       "groupable": true
     },
@@ -19269,10 +19269,10 @@
       "label": "How attached do you feel to Kavana?",
       "type": "likert",
       "scaleOrder": [
-        "3 - Extremely attached",
-        "2 - Somewhat attached",
+        "0 - Not attached",
         "1 - Not very attached",
-        "0 - Not attached"
+        "2 - Somewhat attached",
+        "3 - Extremely attached"
       ],
       "groupable": true
     },
@@ -19752,10 +19752,10 @@
       "label": "How important is being Jewish (or being part of a Jewish household) in your life?",
       "type": "likert",
       "scaleOrder": [
-        "Very important",
-        "Somewhat important",
+        "Not at all important",
         "Not very important",
-        "Not at all important"
+        "Somewhat important",
+        "Very important"
       ],
       "groupable": true
     },
@@ -19763,11 +19763,11 @@
       "label": "Among the people you consider your closest friends, would you say that",
       "type": "multiple choice",
       "scaleOrder": [
+        "None are Jewish",
         "Most are non-Jewish",
         "About half are Jewish",
         "Most are Jewish",
-        "All or almost all are Jewish",
-        "None are Jewish"
+        "All or almost all are Jewish"
       ],
       "groupable": true
     },
@@ -19978,8 +19978,8 @@
       "label": "Which of the following best characterizes your Hebrew language ability?",
       "type": "multiple choice",
       "scaleOrder": [
-        "I read Hebrew phonetically, but don't understand much of what I'm reading.",
         "I can't read Hebrew.",
+        "I read Hebrew phonetically, but don't understand much of what I'm reading.",
         "I understand simple sentences in Hebrew, but don't speak it well.",
         "I read and understand Hebrew fluently."
       ],
@@ -20115,11 +20115,11 @@
       "label": "Overall, how would you describe your views on U.S. political issues?",
       "type": "multiple choice",
       "scaleOrder": [
+        "Conservative",
+        "Moderate",
         "Liberal",
         "Progressive",
-        "Moderate",
-        "Not sure",
-        "Conservative"
+        "Not sure"
       ],
       "groupable": true
     },
@@ -20141,10 +20141,10 @@
       "label": "To what extent does political alignment with the Kavana community draw you to Kavana?",
       "type": "likert",
       "scaleOrder": [
-        3,
-        4,
+        1,
         2,
-        1
+        3,
+        4
       ],
       "groupable": true
     },
@@ -20164,14 +20164,14 @@
       "label": "What is your age as of your last birthday?",
       "type": "multiple choice",
       "scaleOrder": [
-        "45-54",
-        "35-44",
-        "65-74",
-        "55-64",
-        "75-84",
-        "25-34",
         "13 - 18",
-        "19 - 24"
+        "19 - 24",
+        "25-34",
+        "35-44",
+        "45-54",
+        "55-64",
+        "65-74",
+        "75-84"
       ],
       "groupable": true
     },
@@ -20188,12 +20188,12 @@
       "label": "What is the highest level of education you have achieved?",
       "type": "multiple choice",
       "scaleOrder": [
-        "Professional post-graduate degree (e.g. MSW., law degree, MBA., MLS)",
-        "Doctor or Doctorate (M.D. Ed.D., Ph.D. etc.)",
+        "High School or less",
+        "Some college",
         "B.A. or B.S. or other undergraduate degree",
         "M.A. or equivalent",
-        "Some college",
-        "High School or less"
+        "Professional post-graduate degree (e.g. MSW., law degree, MBA., MLS)",
+        "Doctor or Doctorate (M.D. Ed.D., Ph.D. etc.)"
       ],
       "groupable": true
     },
